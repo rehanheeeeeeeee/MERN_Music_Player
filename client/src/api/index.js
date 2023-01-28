@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Storing our base url
-const baseUrl = "http://localhost:5000/";
+const baseUrl = process.env.REACT_APP_BASE_URL;
 
 // Here im going to keep
 export const validateUser = async (token) => {
